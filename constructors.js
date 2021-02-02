@@ -50,6 +50,34 @@ function expect(target) {
 //
 // Only add code to *THIS* section!
 
+
+function Dog(obj) {
+  this.status = 'normal'
+  this.color = 'black'
+  if (!this.hungry){
+      this.hungry = false
+  } else {
+    this.hungry = true
+  }
+}
+if (this.owner) {
+      this.owner = null
+}
+
+function Human(cool) {
+    if (this.cool==undefined){
+      this.cool = true
+    } else {
+      this.cool = cool
+    }
+    }
+
+Human.prototype.pet = function (obj) {
+  obj.status = 'happy'
+}
+Human.prototype.feed = function (obj) {
+  obj.hungry = false
+}
 // ????????
 // ????????
 // ????????
