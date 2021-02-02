@@ -53,22 +53,30 @@ function expect(target) {
 
 function Dog(obj) {
   this.status = 'normal'
-  this.color = 'black'
-  if (!this.hungry){
-      this.hungry = false
+  if (obj) {
+    this.color = obj.color
+    this.hungry = obj.hungry
+  } 
+
+  if (this.hungry === undefined){
+      this.hungry = true
   } else {
-    this.hungry = true
+    this.hungry = false
   }
 }
 if (this.owner) {
       this.owner = null
 }
 
-function Human(cool) {
-    if (this.cool==undefined){
-      this.cool = true
+function Human(obj) {
+    if (obj) {
+      this.cool = obj.cool
+    }
+
+    if (this.cool===undefined){
+      this.cool = false
     } else {
-      this.cool = cool
+      this.cool = true
     }
     }
 
